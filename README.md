@@ -1,2 +1,2 @@
-# debian-sid-docker
+# debian-sid
 Debian Sid docker image with some basic tools.
