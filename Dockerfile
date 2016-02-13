@@ -25,7 +25,7 @@ RUN rm -rf \
         # less is more
         /bin/more
 
-RUN find / -type d -iname "*doc*" -print -exec \
-    sh -c 'rm -rf `ls -a {} | egrep -v "^.{1,2}$"`' \;
+RUN find / -path "*doc*/*" -delete
+RUN find / -type d -iname "*doc*" -delete
 
 CMD ["bash"]
